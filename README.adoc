@@ -1,0 +1,36 @@
+== SliDIY
+
+An affordable slider system that can be controlled with a web app via a microcontroller. It can be easily reconstructed at home with the help of a manual.
+
+==== Authors
+
+* *Tea Leon* - https://github.com/tealeon[TeaLeon]
+* *Ehmeir Franziskus* -
+https://github.com/franziskusehmeir[FranziskusEhmeir]
+
+See also the list of
+https://github.com/franziskusehmeir/SliDIY/contributors[contributors]
+who participated in this project.
+
+=== How to run
+
+1. download & extract the latest *release.zip*
+
+2. run the *configure.sh* 
+
+  chmod +x script-name-here.sh
+  ./configure.sh
+
+
+3. enable spi on the rpi +
+* *Menu* > *Preferences* > *Raspberry Pi Configuration* > *Interfaces* Tab
+* set SPI to “Enabled”
+
+4. reboot the rpi
+  
+5. run app
+
+  python slidiy.py
+  
+  
+  
