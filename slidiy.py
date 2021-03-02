@@ -1,6 +1,9 @@
-from flask import Flask, render_template_string, request 
+from flask import Flask, render_template_string, request
+from MCP3008 import MCP3008
 import RPi.GPIO as GPIO
 import time
+
+adc = MCP3008()
  
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
@@ -27,7 +30,7 @@ GPIO.setup(coil_B_2_pin, GPIO.OUT)
 sliderLength = 55
 
 # Anzahl an Steps fuer eine ganze Kamerafahrt
-completeSteps = sliderLength/0.08
+maxSteps = sliderLength/0.08
 
 app = Flask(__name__)
  
@@ -98,13 +101,19 @@ def acceleration(delay, steps, currentStep):
     else:
         time.sleep(delay)
         
-    
  
 def forward(delay, steps):
     for i in range(steps):
         for j in range(StepCount):
-            setStep(Seq[j][0], Seq[j][1], Seq[j][2], Seq[j][3])
-            acceleration(delay, steps, i)
+            esValue = adc.read( channel = 0 )
+            print("ES" + str(esValue))
+            if esValue > 1500:
+                break
+            else:
+                setStep(Seq[j][0], Seq[j][1], Seq[j][2], Seq[j][3])
+                acceleration(delay, steps, i)
+                
+            
  
 def backwards(delay, steps):
     for i in range(steps):
@@ -153,9 +162,9 @@ def run():
     if(delay<0.003):
         delay = 0.003
 
-    print(delay)
+    #print("Delay: "+str(delay))
 
-    print(int(steps))
+    #print("Steps "+str(int(steps))
 
     if(float(steps) > 0):
         forward(delay, int(steps))
