@@ -8,8 +8,6 @@ v0.1.0, 2020-08-01
 With the help of SliDIY it is made possible to easily build your own motorized slider.
 SliDIY is a web application which controls the movement of your slider.
 
-image:./images/SysArc.png[Aufbau,title="Aufbau"]
-
 === Hardware list
 
 camera-slider: +
@@ -17,8 +15,6 @@ https://www.amazon.de/gp/product/B06Y46H989/
 
 stepper motor: +
 https://www.amazon.de/gp/product/B00PNEQKC0/
-
-Arduino Uno with CNC-Shield V3.0 (with USB-cable and drivers) +
 
 touchscreen display (optional): +
 https://www.amazon.de/Raspberry-Pi-7-Inch-Screen-Display/dp/B014WKCFR4 +
@@ -42,66 +38,7 @@ then unlock ssh in the raspi-config
 In this menu change to the tab "Interfacing Options" and enable the option "SSH". After this you need to reboot your
 your Raspberry Pi.
 
-install CNCJS on the Raspberry: +
-
-``
-sudo apt-get update
-``
-
-``
-sudo apt-get upgrade -y
-``
-
-``
-sudo apt-get dist-upgrade -y
-``
-
-``
-sudo apt-get install -y build-essential git
-``
-
-``
-sudo apt-get install -y htop iotop nmon lsof screen
-``
-
-``
-sudo reboot
-``
-
-``
-curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-``
-
-``
-sudo apt install -y nodejs build-essential
-``
-
-``
-sudo apt-get install -y npm
-``
-
-``
-sudo npm install -g npm@latest
-``
-
-``
-sudo npm install -g cncjs@latest --unsafe-perm
-``
-
-``
-cncjs
-``
-
-you can now check under localhost:8000 if the installation was successful
-
-reboot Raspberry Pi  +
-``
-sudo reboot
-``
-
 === 3D-Case
-
-image:./images/3d_box.jpg[3d-case,title="3d-Case"]
 
 We used https://www.tinkercad.com/[Tinkercad] for modeling our 3D-Case since it is made for people who have
 never touched a 3D-modeling software like Blender or Cinema4D. Tinkercad is a simple web-based modeling-tool.
