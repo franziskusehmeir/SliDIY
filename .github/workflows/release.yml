@@ -35,12 +35,12 @@ jobs:
       #- name: create build artifact [sdist]
       #  run: python setup.py sdist
 
-      #- name: get release name
-      #  id: get_release_name
-      #  run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
+      - name: get release name
+        id: get_release_name
+        run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
 
-      #- name: upload build artifact
-      #  uses: actions/upload-artifact@v2
-      #  with:
-      #    name: slidiy-${{ steps.get_release_name.outputs.VERSION }}
-      #    path: dist/*
+      - name: upload build artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: slidiy-${{ steps.get_release_name.outputs.VERSION }}
+          path: dist/*
