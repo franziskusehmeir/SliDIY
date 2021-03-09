@@ -108,6 +108,7 @@ def forward(delay, steps):
             esValue = adc.read( channel = 0 )
             print("ES" + str(esValue))
             if esValue > 1500:
+                backwards(delay, 50)
                 break
             else:
                 setStep(Seq[j][0], Seq[j][1], Seq[j][2], Seq[j][3])
