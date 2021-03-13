@@ -10,21 +10,29 @@ SliDIY is a web application which controls the movement of your slider.
 
 === Hardware list
 
-camera-slider: +
-https://www.amazon.de/gp/product/B06Y46H989/
+https://www.amazon.de/gp/product/B06Y46H989/[Camera Slider] +
+https://www.amazon.de/gp/product/B00PNEQKC0/[Stepper Motor] +
+https://www.amazon.de/Raspberry-Pi-7-Inch-Screen-Display/dp/B014WKCFR4[Touchscreen (optional)] +
+https://www.amazon.de/gp/product/B07JGXG7S2/ref=ppx_yo_dt_b_asin_title_o00_s00[Timing Belt with Accessories] +
+https://www.amazon.de/Youmile-Schrittmotortreiber-Controller-TREIBER-Rundloch/dp/B0817HXMBM/ref=sr_1_5[L293D] +
+https://www.amazon.de/Adafruit-MCP3008-8-Channel-Interface-Raspberry/dp/B0722FJRSQ/ref=sr_1_4[MCP3008] +
+https://www.amazon.de/MissBirdler-Lichtschranke-Optical-TCST2103-Raspberry/dp/B01N96C89L/ref=sr_1_8[Optical Endstop]
 
-stepper motor: +
-https://www.amazon.de/gp/product/B00PNEQKC0/
+=== Breadboard
 
-touchscreen display (optional): +
-https://www.amazon.de/Raspberry-Pi-7-Inch-Screen-Display/dp/B014WKCFR4 +
+image::breadboard.png[Breadboard]
 
-timing belt with accessories: +
-https://www.amazon.de/gp/product/B07JGXG7S2/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1
+=== Pinouts
+
+https://media.discordapp.net/attachments/793866846948163635/793868521506734100/GPIO-Pinout-Diagram-2.png[Raspberry Pi] +
+
+https://media.discordapp.net/attachments/793866846948163635/813754097022926878/ByvIYbYymtI3JKiwxAiWJJaRGXuCAHvD6U6x39VU2MlTiQmrOnyuxKH8cXF57D7fvXf8nvpG6fhgE8Cp1mUROIo7R3k0EGGWSQQQ.png[MCP3008] +
+
+https://i.stack.imgur.com/xg8gz.png[L293D]
 
 === Software installation
 
-Download the Raspbian Buster Lite Image: +
+download the Raspbian Buster Lite Image: +
 https://www.raspberrypi.org/downloads/raspbian/
 
 write the image with help of the Raspberry Pi Imager onto the sd-card: +
