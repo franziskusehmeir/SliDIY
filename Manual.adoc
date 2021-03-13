@@ -38,13 +38,35 @@ then unlock ssh in the raspi-config
 In this menu change to the tab "Interfacing Options" and enable the option "SSH". After this you need to reboot your
 your Raspberry Pi.
 
+On the Raspberry Pi:
+
+download & extract the latest *release.zip*
+
+run the *configure.sh* 
+
+  chmod +x script-name-here.sh
+  ./configure.sh
+
+
+enable spi on the rpi +
+* *Menu* > *Preferences* > *Raspberry Pi Configuration* > *Interfaces* Tab
+* set SPI to “Enabled”
+
+reboot the Raspberry Pi
+  
+run app
+
+  python slidiy.py
+  
+go to localhost:5000
+
 === 3D-Case
 
 We used https://www.tinkercad.com/[Tinkercad] for modeling our 3D-Case since it is made for people who have
 never touched a 3D-modeling software like Blender or Cinema4D. Tinkercad is a simple web-based modeling-tool.
 You have to export your 3d-model as a STL-file for the 3d-printing.
 
-other option to Tinkercad:
+Alternatives to Tinkercad:
 
 * Blender
 * Cinema4D
@@ -52,5 +74,9 @@ other option to Tinkercad:
 * Meshmixer
 * Microsoft 3D Builder
 
-There are no strict rules on how to design your case, so model it the way you want or download our model!
+There are no strict rules on how to design your case, so model it the way you want or download our https://github.com/franziskusehmeir/SliDIY/blob/main/box.stl[model]!
+
+=== Sources
+https://tutorials-raspberrypi.de/raspberry-pi-schrittmotor-steuerung-l293d-uln2003a/ +
+https://tutorials-raspberrypi.de/raspberry-pi-mcp3008-analoge-signale-auslesen/
 
