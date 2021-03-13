@@ -25,22 +25,16 @@ image::breadboard.png[Breadboard]
 === Pinouts
 
 https://media.discordapp.net/attachments/793866846948163635/793868521506734100/GPIO-Pinout-Diagram-2.png[Raspberry Pi] +
-
 https://media.discordapp.net/attachments/793866846948163635/813754097022926878/ByvIYbYymtI3JKiwxAiWJJaRGXuCAHvD6U6x39VU2MlTiQmrOnyuxKH8cXF57D7fvXf8nvpG6fhgE8Cp1mUROIo7R3k0EGGWSQQQ.png[MCP3008] +
-
 https://i.stack.imgur.com/xg8gz.png[L293D]
 
 === Software installation
 
-download the Raspbian Buster Lite Image: +
-https://www.raspberrypi.org/downloads/raspbian/
+Install https://www.raspberrypi.org/software/[Raspberry Pi OS] using Raspberry Pi Imager
 
-write the image with help of the Raspberry Pi Imager onto the sd-card: +
-https://www.raspberrypi.org/downloads/
+First follow the instruction of the Raspberry Pi
 
-first follow the instruction of the Raspberry Pi
-
-then unlock ssh in the raspi-config
+Then unlock ssh in the raspi-config
 
 ``raspi-config`` +
 In this menu change to the tab "Interfacing Options" and enable the option "SSH". After this you need to reboot your
@@ -48,40 +42,30 @@ your Raspberry Pi.
 
 On the Raspberry Pi:
 
-download & extract the latest *release.zip*
+Download & extract the latest *release.zip*
 
-run the *configure.sh* 
+Run the *configure.sh* 
 
   chmod +x script-name-here.sh
   ./configure.sh
 
 
-enable spi on the rpi +
+Enable spi on the rpi +
 * *Menu* > *Preferences* > *Raspberry Pi Configuration* > *Interfaces* Tab
 * set SPI to “Enabled”
 
-reboot the Raspberry Pi
+Reboot the Raspberry Pi
   
-run app
+Run app
 
   python slidiy.py
   
-go to localhost:5000
+Go to localhost:5000
 
 === 3D-Case
 
 We used https://www.tinkercad.com/[Tinkercad] for modeling our 3D-Case since it is made for people who have
-never touched a 3D-modeling software like Blender or Cinema4D. Tinkercad is a simple web-based modeling-tool.
-You have to export your 3d-model as a STL-file for the 3d-printing.
-
-Alternatives to Tinkercad:
-
-* Blender
-* Cinema4D
-* Meshlab
-* Meshmixer
-* Microsoft 3D Builder
-
+never touched a 3D-modeling software. Tinkercad is a simple web-based modeling-tool. You have to export your 3d-model as a *STL-file* for the 3d-printing.
 There are no strict rules on how to design your case, so model it the way you want or download our https://github.com/franziskusehmeir/SliDIY/blob/main/box.stl[model]!
 
 === Sources
