@@ -11,12 +11,14 @@ SliDIY is a web application which controls the movement of your slider.
 === Hardware list
 
 https://www.amazon.de/gp/product/B06Y46H989/[Camera Slider] +
+https://www.amazon.de/gp/product/B07BFH96M3/ref=crt_ewc_title_huc_2[Raspberry Pi] +
 https://www.amazon.de/gp/product/B00PNEQKC0/[Stepper Motor] +
 https://www.amazon.de/Raspberry-Pi-7-Inch-Screen-Display/dp/B014WKCFR4[Touchscreen (optional)] +
 https://www.amazon.de/gp/product/B07JGXG7S2/ref=ppx_yo_dt_b_asin_title_o00_s00[Timing Belt with Accessories] +
 https://www.amazon.de/Youmile-Schrittmotortreiber-Controller-TREIBER-Rundloch/dp/B0817HXMBM/ref=sr_1_5[L293D] +
 https://www.amazon.de/Adafruit-MCP3008-8-Channel-Interface-Raspberry/dp/B0722FJRSQ/ref=sr_1_4[MCP3008] +
-https://www.amazon.de/MissBirdler-Lichtschranke-Optical-TCST2103-Raspberry/dp/B01N96C89L/ref=sr_1_8[Optical Endstop]
+https://www.amazon.de/MissBirdler-Lichtschranke-Optical-TCST2103-Raspberry/dp/B01N96C89L/ref=sr_1_8[Optical Endstop] +
+https://www.amazon.de/gp/product/B01EV70C78/ref=crt_ewc_title_huc_1[Jumper Cables]
 
 === Breadboard
 
